@@ -1,3 +1,11 @@
+#hello i am sonam befawazir jori writing on the main.tf file to create infra for todo app
+# Resource Group
+# Create a resource group for the ToDo application
+# Create a virtual network with subnets for frontend and backend
+# Create virtual machines for frontend and backend  
+
+
+
 module "resource_group" {
   source                  = "../modules/azurerm_resource_group"
   resource_group_name     = "rg-todoapp1"

@@ -1,3 +1,8 @@
+#------------------ b-17-todoapp--infra/ToDo_Infra/provider.tf ------------------
+# Configure the Microsoft Azure Provider
+# Documentation: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs
+#----------------------------------------------------------------------------------   
+
 terraform {
   required_providers {
     azurerm = {

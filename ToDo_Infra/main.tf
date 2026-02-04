@@ -3,6 +3,7 @@
 # Create a resource group for the ToDo application
 # Create a virtual network with subnets for frontend and backend
 # Create virtual machines for frontend and backend  
+#
 
 
 

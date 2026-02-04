@@ -3,6 +3,7 @@
 # Create a resource group for the ToDo application
 # Create a virtual network with subnets for frontend and backend
 # Create virtual machines for frontend and backend  
+#
 
 
 
@@ -16,6 +17,15 @@ module "virtual_network" {
   depends_on = [module.resource_group]
   source     = "../modules/azurerm_virtual_network"
   virtual_network_name     = "vnet-todoapp1"
+  virtual_network_location = "East US"
+  resource_group_name      = "rg-todoapp1"
+  address_space            = ["10.0.0.0/16"]
+}
+
+module "virtual_network" {
+  depends_on = [module.resource_group]
+  source     = "../modules/azurerm_virtual_network"
+  virtual_network_name     = "vnet-tondu"
   virtual_network_location = "East US"
   resource_group_name      = "rg-todoapp1"
   address_space            = ["10.0.0.0/16"]
